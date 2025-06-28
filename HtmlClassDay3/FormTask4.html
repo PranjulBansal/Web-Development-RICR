@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <table border="1" align="center">
+      <tr>
+        <td align="center" colspan="4"><h1>Registration Form</h1></td>
+      </tr>
+      <tr>
+        <td width="250px" height="30px"><label for="">Student Name</label></td>
+        <td width="250px"height="30px">
+          <input type="text" placeholder="First Name" name="fname" />
+        </td>
+        <td width="250px">
+          <input type="text" placeholder="Middle Name" name="mname" />
+        </td>
+        <td width="250px">
+          <input type="text" placeholder="Last Name" name="lname" />
+        </td>
+      </tr>
+      <tr>
+        <td width="250px" height="30px"><label for="">Father's Name</label></td>
+        <td width="250px">
+          <input type="text" placeholder="Enter Your Father's Name" />
+        </td>
+        <td width="250px"><label for="">Mother's Name</label></td>
+        <td width="250px">
+          <input type="text" placeholder="Enter Your Mother's Name" />
+        </td>
+      </tr>
+      <tr>
+        <td width="250px" height="30px"><label for="">Date of Birth</label></td>
+        <td width="250px">
+          <input type="date" name="date" />
+        </td>
+        <td width="250px"><label for="">Gender</label></td>
+        <td width="250px">
+          <input type="radio" name="gender" />
+          <span>Male</span>
+          <input type="radio" name="gender" />
+          <span>Female</span>
+        </td>
+      </tr>
+      <tr>
+        <td width="250px" height="30px"><label for="">Category</label></td>
+        <td width="250px">
+          <input type="radio" name="category" />
+          <span>Gen</span>
+          <input type="radio" name="category" />
+          <span>OBC</span>
+          <input type="radio" name="category" />
+          <span>SC/ST</span>
+        </td>
+        <td width="250px"><label for="">Handicaped</label></td>
+        <td width="250px">
+          <input type="radio" name="handicap" />
+          <span>Yes</span>
+          <input type="radio" name="handicap" />
+          <span>No</span>
+        </td>
+      </tr>
+      <tr>
+        <td width="250px" height="30px"><label for="">Ex Serviceman</label></td>
+        <td width="250px">
+          <input type="radio" name="service" />
+          <span>Yes</span>
+          <input type="radio" name="service" />
+          <span>No</span>
+        </td>
+        <td width="250px"><label for="">EWS</label></td>
+        <td width="250px">
+          <input type="radio" name="ews" />
+          <span>Yes</span>
+          <input type="radio" name="ews" />
+          <span>No</span>
+        </td>
+      </tr>
+      <tr>
+        <td height="30px">
+          <label for="">Email ID</label>
+        </td>
+        <td>
+          <input type="email" name="email" />
+        </td>
+        <td>
+          <label for="">Mobile No</label>
+        </td>
+        <td>
+          <input type="text" name="number" />
+        </td>
+      </tr>
+      <tr>
+        <td height="30px"><label for="">State</label></td>
+        <td>
+          <select name="">
+            <option value="">Select any one</option>
+            <option value="">MP</option>
+
+            <option value="">UP</option>
+
+            <option value="">RJ</option>
+          </select>
+        </td>
+        <td><label for="">City</label></td>
+        <td>
+          <select name="">
+            <option value="">Select any one</option>
+            <option value="">Bhopal</option>
+
+            <option value="">Satna</option>
+
+            <option value="">Jaipur</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td height="30px">
+            <label for="">Upload Photo</label>
+        </td>
+        <td>
+            <input type="file">
+        </td>
+         <td height="30px">
+            <label for="">Upload Signature</label>
+        </td>
+        <td>
+            <input type="file">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" height="30px" align="center">
+            <button>Submit</button>
+        </td>
+        
+      </tr>
+    </table>
+  </body>
 </html>
