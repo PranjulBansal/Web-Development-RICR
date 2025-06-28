@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend align="center">Fill Registration Form</legend>
+
+      <div>
+        <div>
+          <label for="">Name:</label>
+          <input type="text" name="fullName" placeholder="Enter your name" />
+        </div>
+        <br />
+        <div>
+          <label for="">Age</label>
+          <input
+            type="number"
+            name="age"
+            min="0"
+            max="99"
+            placeholder="your age"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="choose strong password"
+            aria-placeholder="must contain charset"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="">Email:</label>
+          <input type="email" name="email" />
+        </div>
+        <br />
+        <div>
+          <label for="">DOB:</label>
+          <input type="date" name="DOB" />
+        </div>
+        <div>
+          <label for="">Time:</label>
+          <input type="time" name="TOB" />
+        </div>
+        <br />
+        <div>
+          <label for="">Resume:</label>
+          <input type="file" name="file" />
+        </div>
+        <br />
+        <div>
+          <label for="">Phone</label>
+          <input type="tel" name="phone" />
+        </div>
+        <br />
+        <div>
+          <label for="">Rating</label>
+          <input type="range" name="rating" min="0" max="10" />
+        </div>
+        <br />
+
+        <div>
+          <label for="">Gender:</label>
+          <input type="radio" name="gender" value="male" />
+          <span>Male</span>
+          <input type="radio" name="gender" value="female" />
+          <span>Female</span>
+          <input type="radio" name="gender" value="not specify" />
+          <span>Not Specify</span>
+        </div>
+        <br />
+
+        <div>
+          <label for="">Technology:</label>
+          <input type="checkbox" name="tech" value="c++" />
+          <span>c++</span>
+          <input type="checkbox" name="tech" value="python" />
+          <span>python</span>
+          <input type="checkbox" name="tech" value="java" />
+          <span>java</span>
+        </div>
+        <br />
+
+        <div>
+          <label for="">Qualification:</label>
+          <select name="Qualification">
+            <option value="">Select Qualification</option>
+            <option value="10">10th</option>
+            <option value="12">12th</option>
+            <option value="graduation">graduation</option>
+            <option value="post-graduation">post-graduation</option>
+            <option value="Masters">Masters</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="">Address:</label>
+          <textarea
+            name="address"
+            placeholder="describe about yourself"
+            rows="5"
+            cols="30"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="">LinkedIN URl:</label>
+          <input type="url" name="url" placeholder="Enter your url" />
+        </div>
+        <br />
+        <div>
+          <label for="">Joining week:</label>
+          <input type="week" name="week" />
+        </div>
+        <br />
+        <a href="https://github.com/PranjulBansal" target="_blank"
+          >Github account</a
+        >
+        <br />
+        <a href="demoimg.jpg" download>Download Image</a>
+
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>
