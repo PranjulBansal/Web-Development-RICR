@@ -7,15 +7,18 @@
     /* width: 100vw;
     height: 100vh; */
     /* margin */
-    border: 5px solid purple ;
+    /* border: 5px solid purple ; */
     /* display: inline; */
     /* align-items: center; */
-    margin-left: 500px;
+    margin-left: 600px;
     width: 1250px;
+    display: flex;
+    gap: 5px;
 }
 .section1 {
-  display: inline-block;
-  background-color:rgb(60, 143, 211);
+  display: grid;
+  background-color:rgb(225, 67, 70);
+  
   width: 400px;
   /* margin-top: 0; */
   /* height: 1000px; */
@@ -32,7 +35,8 @@ img {
   zoom: 200%;
   /* transform: scale(1); */
   overflow: hidden;
-}.designation{
+}
+.designation{
     margin-top: 10px;
     color: rgb(225, 225, 115);
     text-align: center;
@@ -40,7 +44,7 @@ img {
 }
 .pname
 {
-    margin-top: 10px;
+    margin-top: 20px;
     /* padding-top: 10px; */
     color: white;
     text-align: center;
@@ -54,27 +58,140 @@ img {
 }
 .cntHead{
     color: white;
-    margin-top: 25px;
-    margin-left: 15px;
-    font-size: 20px;
+    /* margin-top: 5px; */
+    margin-left: 35px;
+    font-size: 25px;
 }
 .cnt{
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 .icon{
     display: inline-block;
-    margin-left: 15px;
-    margin-top: 12px;
+    margin-left: 35px;
+    margin-top:   15px;
     color: blue;
 }
 .link{
     display: inline-block;
     color: rgb(253, 253, 249);
     margin-left: 10px;
+    text-decoration: none;
+    font: normal  ;
 }
+.skills{
+ color: white;
+    margin-top: 20px;
+    margin-left: 35px;
+    display: grid;
+}
+.skillHead{
+font-size: 25px;
+}
+.skillpara{
+  font-size: 15px;
+}
+.refer{
+color: white;
+    margin-top: 55px;
+    margin-left: 35px;
+    display: grid;
+}
+.referenceHead{
+font-size: 25px;
+/* margin-top: 50px; */
 
+}
+.referPara{
+    color: rgb(225, 225, 115);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.referDesg{
+margin-top: 10px;
+font-size: 18px;
+}
+.referinfo{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.icon1{
+  /* margin-left: 12px; */
+  color: blue;
+}
+.atag{
+  text-decoration: none;
+  color: aliceblue;
+}
 .section2 {
-  display: inline-block;
-  background-color: rgb(172, 219, 239);
+  display: grid;
+  background-color: rgb(238, 193, 201);
   width: 800px;
+}
+/* .content1{
+  display: grid;
+} */
+.head1{
+  color: rgb(225, 67, 70);
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-left: 25px;
+}
+.paraSection2{
+  display: grid;
+  gap: 15px;
+  margin-left:25px ;
+  margin-top: 10px;
+  font-size: 18px;
+  /* grid-template-columns: 200 200; */
+  margin-right: 20px;
+}
+.head2{
+  color: rgb(225, 67, 70);
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.firstSide{
+display: flex;
+gap: 140px;
+margin-left: 25px;
+/* width: 200px; */
+/* margin-top: 12px; */
+}
+.one{
+  display: grid;
+    margin-top: 25px;
+    width: 200px;
+    /* gap: 0; */
+
+}
+.cname{
+  font-size: 20px;
+  width: 300px;
+}
+.cpara{
+  font-size: 15px;
+  margin-top: -22px;
+}
+.second{
+  display: grid;
+  /* margin-top: -15px; */
+  /* margin-right: 20px;
+  margin-left: 40px; */
+  grid-template-columns: 20 400;
+}
+.pname{
+  color: rgb(225, 67, 70);
+  width: 400px;
+  /* padding-left: 10px; */
+  margin-left: -105px;
+}
+.ppara{
+  border-left: 4px solid black;
+  width: 400px;
+  padding-left: 10px;
+  margin-top: 10px;
 }
