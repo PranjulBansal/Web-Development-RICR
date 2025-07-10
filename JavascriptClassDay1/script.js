@@ -85,3 +85,11 @@ console.log(x===y);
 console.log(x!=y)//value check;
 console.log(x!==y)//Datatype Check;
 
+let variable1=10;
+function demo()
+{
+  let variable2=20;
+  console.log("variable",variable1);
+}
+demo()
+

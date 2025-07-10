@@ -3,7 +3,7 @@ function submitLogin() {
   console.log(email);
   const pass = document.getElementById("pass").value;
   console.log(pass);
-  const rem = document.getElementById("rem").value;
+  const rem = document.getElementById("rem").checked;
   console.log(rem);
 }
 function submitRegister() {

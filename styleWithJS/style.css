@@ -1,0 +1,27 @@
+#abcd{
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+}
+#gola{
+    height: 800px;
+    width: 600px;
+    /* background-color: aliceblue; */
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.jalgya{
+    background-color: yellow;
+}
+.bhujgya{
+    background-color: aliceblue;
+}
+#dusraGola,#thirdGola{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.eksaath{
+    background-color: yellow;
+}
