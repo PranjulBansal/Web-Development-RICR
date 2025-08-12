@@ -11,9 +11,6 @@ for (var i = 0; i < 5; i++) {
   console.log(i);
 }
 for (var i = 0; i < 5; i++) {
-  console.log(i);
-}
-for (var i = 0; i < 5; i++) {
   for (var i = 0; i < 5; i++) {
     console.log("inner", i);
   }
@@ -40,12 +37,12 @@ console.log(x + y);
 var x = 1.2;
 var y = 2.2;
 console.log((x + y).toFixed(2));
-console.log(typeof (x + y).toFixed(2));
+console.log(typeof (x + y).toFixed(2));//string
 
 var x = 1.2;
 var y = 2.2;
 console.log(x + y);
-console.log(typeof (x + y));
+console.log(typeof (x + y));//number
 
 var x = "A";
 var y = "B";
@@ -70,6 +67,7 @@ console.log(e);
 
 var ij=null;
 console.log(ij);
+console.log(typeof(ij))
 
 let fruits=[1,2,2];
 console.log(fruits[1]);
@@ -92,4 +90,15 @@ function demo()
   console.log("variable",variable1);
 }
 demo()
+
+let x1='pranjul';
+console.log(typeof(x1));
+
+let x2=7789999999999999999999999999999999999999;
+console.log(typeof(x2));
+
+let x3=null;
+console.log(typeof(x3));
+
+
 

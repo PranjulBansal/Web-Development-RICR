@@ -1,0 +1,32 @@
+#badaGola{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.chotaGola{
+    margin: 5px;
+    border: 1px solid ;
+   
+}
+#golas{
+ display: flex;
+}
+#chotaGola1{
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+#chotaGola2{
+    background-color: rgb(198, 226, 43);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+#chotaGola3{
+    background-color: rgb(226, 43, 43);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+} 
