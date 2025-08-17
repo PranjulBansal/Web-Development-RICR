@@ -1,0 +1,71 @@
+#about{
+  /* background-color: rgb(18, 18, 21); */
+  color: brown;
+}
+#image{
+  width: 300px;
+  height: 300px;
+}
+#download{
+  height: 40px;
+  width: 50px;
+}
+#aboutHead{
+  text-align: center;
+}
+#aboutHeight{
+  height: 1050px;
+}
+#aboutWidth{
+  width: 850px;
+  margin-bottom: 100px;
+}
+#edHead{
+  text-align: center;
+}
+#edDetail1{
+text-align: center;
+}
+#edDetail2{
+text-align: center;
+}
+#edDetail3{
+text-align: center;
+}
+#edDetail4{
+text-align: center;
+}
+#edDetail5{
+text-align: center;
+}
+#edDetail6{
+text-align: center;
+}
+#arrow{
+  margin-left: 650px;
+  margin-top: 8px;
+  width: 20px;
+  height: 30px;
+}
+#arrow1{
+  margin-left: 950px;
+  margin-top: -10px;
+  width: 20px;
+  height: 30px;
+}
+#projectHead{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#baatHeight{
+  height: 420px ;
+  width: 300px;
+  margin-left: 100px;
+}
+#baatSet{
+  height: 200px;
+  width: 250px;
+}
+#link{
+  margin-top: 40px;
+}
