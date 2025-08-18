@@ -7,7 +7,7 @@ import arrow from "../assets/arrow.png";
 function Education() {
   return (
     <>
-      <div className="bg-success container-fluid  border-black" id="education">
+      <div className="bg-white container-fluid  border-black" id="education">
         <div className="d-flex gap-2 justify-content-center">
           <img src={ed} alt="" className="my-3 " />
           <h1 className="text-black my-4">Education</h1>

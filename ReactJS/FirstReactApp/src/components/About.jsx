@@ -1,18 +1,19 @@
 import react from "react";
 import about from "../assets/about.png";
+import aboutbg from "../assets/aboutbg.avif";
 function About() {
   return (
     <>
-      <div className=" text-light bg-success" id="aboutHeight">
+      <div className=" text-light bg-white" id="aboutHeight">
         <div className="d-flex gap-2 justify-content-center">
           <img src={about} alt=""  className="my-3"/>
           <h1 id="aboutHead" className="text-black my-3">
             About me
           </h1>
         </div>
-        <div className=" container-fluid row d-flex my-4 justify-content-around m-auto border border-success rounded">
-          <div className="col-4 bg-black w-25 border-top rounded-5 ">
-            <h2 className="fs-2 text-success" id="aboutHead">
+        <div className=" container-fluid row d-flex my-4 justify-content-around m-auto ">
+          <div className="col-4 bg-black w-25 border-top  ">
+            <h2 className="fs-2 text-white" id="aboutHead">
               Professional Skills
             </h2>
             <ul type="disc" className="fs-5">
@@ -25,8 +26,8 @@ function About() {
               <li>Tailwind CSS</li>
             </ul>
           </div>
-          <div className="col-4 bg-black w-25 border-bottom rounded-5 ">
-            <h2 className="fs-2 text-success" id="aboutHead">
+          <div className="col-4 bg-black w-25 border-bottom ">
+            <h2 className="fs-2 text-white" id="aboutHead">
               Technical Skills
             </h2>
             <ul type="disc" className="fs-5">
@@ -38,8 +39,8 @@ function About() {
               <li>Php</li>
             </ul>
           </div>
-          <div className="col-4 bg-black w-25 border-top rounded-5">
-            <h2 className="fs-2 text-success" id="aboutHead">
+          <div className="col-4 bg-black w-25 border-top">
+            <h2 className="fs-2 text-white" id="aboutHead">
               Soft Skills
             </h2>
             <ul type="disc" className="fs-5">
@@ -52,12 +53,12 @@ function About() {
             </ul>
           </div>
         </div>
-        <div className="container-fluid row d-flex m-auto  border border-success rounded " >
+        <div className="container-fluid row d-flex m-auto  " >
           <div
-            className="col-12 bg-black border-bottom rounded-5  m-auto "
+            className="col-12 bg-black border-bottom   m-auto "
             id="aboutWidth"
           >
-            <h2 className="fs-2 text-success" id="aboutHead">
+            <h2 className="fs-2 text-white" id="aboutHead">
               Professional Experiences
             </h2>
             <h4 className="text-decoration-underline my-4 mx-4">

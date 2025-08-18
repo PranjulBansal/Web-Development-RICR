@@ -5,30 +5,30 @@ import ContactMe from "./ContactMe.jsx";
 function Navbar() {
   return (
     <>
-      <div className="container-fluid bg-black d-flex justify-content-between">
+      <div className="container-fluid bg-white d-flex justify-content-between">
         <div className="d-flex gap-4 h-50">
-          <img src={logo} alt="error" className="bg-success border-1 my-3" />
-          <h3 className="w-25 my-4 text-white">MyPortfolio</h3>
+          <img src={logo} alt="error" className=" border-1 my-3" />
+          <h3 className="w-25 my-4 text-black">MyPortfolio</h3>
         </div>
         <div className=" d-flex gap-5 m-3 my-4 w-50">
-          <a className="text-white fs-5 text-decoration-none" href="#home">
+          <a className="text-black fs-5 text-decoration-none" href="#home">
             Home
           </a>
-          <a className="text-white fs-5 text-decoration-none" href="#aboutHeight">
+          <a className="text-black fs-5 text-decoration-none" href="#aboutHeight">
             About
           </a>
 
-          <a className="text-white fs-5 text-decoration-none" href="#education">
+          <a className="text-black fs-5 text-decoration-none" href="#education">
             Education
           </a>
 
-          <a className="text-white fs-5 text-decoration-none" href="#project">
+          <a className="text-black fs-5 text-decoration-none" href="#project">
             Projects
           </a>
-          <a className="text-white fs-5 text-decoration-none" href="#certificate">
+          <a className="text-black fs-5 text-decoration-none" href="#certificate">
             Certifications
           </a>
-          <a className="text-white fs-5 text-decoration-none" href="#contactMe">
+          <a className="text-black fs-5 text-decoration-none" href="#contactMe">
             ContactMe
           </a>
         </div>

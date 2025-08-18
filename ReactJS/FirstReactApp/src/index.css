@@ -57,15 +57,22 @@ text-align: center;
   text-align: center;
   margin-bottom: 10px;
 }
+#project{
+  height: 600px;
+}
 #baatHeight{
   height: 420px ;
   width: 300px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 #baatSet{
   height: 200px;
   width: 250px;
 }
-#link{
-  margin-top: 40px;
+#certificateHead{
+  text-align: center;
+  margin-top: 20px;
+}
+#contactHead{
+  margin-top: 50px;
 }

@@ -5,9 +5,9 @@ import download from "../assets/download.png";
 function Home() {
   return (
     <>
-      <div className="home d-flex justify-content-evenly bg-black border-top border-success shadow-lg" id="home">
+      <div className="home d-flex justify-content-evenly bg-black border-top border-light shadow-lg" id="home">
         <div className="my-5 w-50">
-          <h1 className="text-success mx-4">Hi, I'm Pranjul Bansal!!!</h1>
+          <h1 className="text-white mx-4">Hi, I'm Pranjul Bansal!!!</h1>
           <h2 className="text-white mx-4 ">Full Stack Developer</h2>
           <p className="text-white mx-4 ">
             A highly skilled and results-driven software developer with more
@@ -18,14 +18,14 @@ function Home() {
             performance and solve complex technical challenges
            
           </p>
-          <a href={resume} download className="btn btn-success mx-4">Download CV <img src={download}  id="download" alt=""/></a>
+          <a href={resume} download className="btn btn-light border border-light text-black mx-4">Download CV <img src={download}  id="download" alt=""/></a>
         </div>
         <div>
           <img
             src={img}
             alt=""
             id="image"
-            className="border border-5  border-success rounded-circle my-5"
+            className="border border-5  border-white rounded-circle my-5"
           ></img>
         </div>
       </div>

@@ -15,9 +15,10 @@ function App() {
       <Home/>
       <About />
       <Education />
+      <Projects />
       <Certifications />
       <ContactMe />
-      <Projects />
+      
     </>
   );
 }
