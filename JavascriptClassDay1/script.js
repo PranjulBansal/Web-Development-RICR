@@ -102,3 +102,6 @@ console.log(typeof(x3));
 
 
 
+let a1 = "pryanjul"
+ console.log(Number(a1));
+ 

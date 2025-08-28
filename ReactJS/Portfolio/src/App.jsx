@@ -14,9 +14,9 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <main className="flex h-[90vh]" >
-        <Sidebar />
+        
 
-        <section className="border border-green-600 w-11/14">
+        <section className=" w-11/14">
          <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/contact" element={<Contact/>}/>
          </Routes>
         </section>
+        <Sidebar />
       </main>
       </BrowserRouter>
     </>

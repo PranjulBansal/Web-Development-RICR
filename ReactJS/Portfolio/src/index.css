@@ -1,1 +1,58 @@
 @import "tailwindcss";
+#navHead {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 50px;
+}
+#navbar1, #navbar2, #navbar3, #navbar4, #navbar5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+#navbar1:hover {
+  color: #dc143c;
+
+}
+#navbar2:hover {
+  color: crimson;
+}
+#navbar3:hover {
+  color: crimson;
+}
+#navbar4:hover {
+  color: crimson;
+}
+#navbar5:hover {
+  color: crimson;
+}
+#navFooter {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 70px;
+}
+#homeHead{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+#homeHead2{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+#homePara{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#contactHead{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#dc143c
+}
+#contactSide{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#dc143c
+}
+#contactPara{
+    font-style: italic;
+        color:#dc143c;
+
+}
+
