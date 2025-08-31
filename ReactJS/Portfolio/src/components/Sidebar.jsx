@@ -9,12 +9,12 @@ import { IoCall } from "react-icons/io5";
 const Sidebar = () => {
   return (
     <>
-      <div className=" fixed right-0 h-[calc(100vh-50px)] top-22 text-crimson-400 w-4/14 my-[2px]  h bg-gray-950 flex flex-col items-center justify-start p-[20px] ">
+      <div className=" right-0 h-[85vh] mt-[117px] text-crimson-400 w-4/14  bg-gray-950 flex flex-col items-center justify-start p-[20px] ">
         <div>
           <img
             src={pranjul}
             alt=""
-            className="h-80 w-80 border-4 border-[#dc143c] rounded-full animate-[updown_6s_ease-in-out_infinite] shadow-2xl shadow-pink-950"
+            className="h-80 w-80 border-4 border-[#dc143c] rounded-full animate-[updown_6s_ease-in-out_infinite] shadow-2xl shadow-pink-950 mt-[28px]"
           />
           <style>
             {`

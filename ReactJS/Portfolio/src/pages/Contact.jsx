@@ -16,8 +16,8 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="fixed top-22 h-[calc(100vh-80px)] bg-gray-950 text-white w-10/14  ">
-        <div className="flex gap-20 h-[500px] w-[900px] m-auto mt-[60px] shadow-sm shadow-[#dc143c]">
+      <div className=" h-[85vh] bg-gray-950 text-white w-14/14 mt-[117px] pt-[80px] ">
+        <div className="flex gap-20 h-[500px] w-[900px] m-auto shadow-sm shadow-[#dc143c] ">
           <div className="flex flex-col ">
             <h1 className="text-4xl mx-6 mt-15 " id="contactHead">
               Let us Connect

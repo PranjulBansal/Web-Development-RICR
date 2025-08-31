@@ -5,7 +5,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 50px;
 }
-#navbar1, #navbar2, #navbar3, #navbar4, #navbar5 {
+#navbar1, #navbar2, #navbar3, #navbar4, #navbar5,#navbar6{
   font-size: 18px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -25,6 +25,9 @@
   color: crimson;
 }
 #navbar5:hover {
+  color: crimson;
+}
+#navbar6:hover {
   color: crimson;
 }
 #navFooter {
