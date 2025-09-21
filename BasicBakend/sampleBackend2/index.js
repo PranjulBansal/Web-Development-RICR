@@ -6,6 +6,7 @@ import morgan from 'morgan';
 import AuthRouter from './src/routes/authRoutes.js';
 import userRouter from './src/routes/userRoutes.js';
 const app=express();
+import connectDB from './src/config/db.js';
 
 //By default, browsers block requests from different origins for security reasons.
 // cors() comes from the cors package.
@@ -28,6 +29,7 @@ app.get("/",(req,res)=>{
 
 const port= process.env.PORT||5000;
 
-app.listen(5000,()=>{
+app.listen(port,()=>{
     console.log("server is running at port",port);
+    connectDB();
 })
