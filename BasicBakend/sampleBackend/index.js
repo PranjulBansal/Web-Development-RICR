@@ -5,6 +5,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import AuthRouter from "./src/routes/authRouter.js";
 import UserRouter from "./src/routes/userRouter.js";
+import connectDB from './src/config/db.js';
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
 //alternate way to create if else condition
 const port=process.env.PORT||5000;
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("server is running at port",port);
+  connectDB();//function call for mongodb connection from db.js file
 });
