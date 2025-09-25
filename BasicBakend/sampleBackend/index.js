@@ -19,6 +19,11 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "server connected successfully" });
 });
 
+app.use((err,req,res,next)=>{
+  const errorMessage=err.message || "Internal Server Error";
+  const errorCode=err.statusCode || 500;
+  res.status(errorCode).json({message:errorMessage});
+})
 //to check the env variable created correct or not
 // let Port;
 // if(!process.env.PORT)

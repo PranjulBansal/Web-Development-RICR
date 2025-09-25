@@ -1,12 +1,21 @@
 import User from "../models/userModel.js";
-export const Register=async (req, res) => {
+export const Register=async (req, res, next) => {
   // res.status(200).json({ message: "User registration successfull" });
   try {
-    const {fullName ,email, password}=req.body;
+    const {fullName ,email, password}=req.body;  
     if(!fullName || !email || !password)
     {
-      console.log("Error 404 : All fields required")
-      return;
+      // console.log("Error 400 : All fields required")
+      const error=new Error("All Fields Required");
+      error.statusCode=400;
+      return next(error);
+    }
+    const existingUser=await User.findOne({email});
+    if(existingUser)
+    {
+      const error=new Error("Email Already Registered");
+      error.statusCode=409;
+      return next(error);
     }
     const newUser=await User.create({
       fullName,
@@ -15,7 +24,8 @@ export const Register=async (req, res) => {
     });
     res.status(201).json({message:`welcome ${newUser.fullName}`});
   } catch (error) {
-    console.log(error)
+    next(error)
+
   }
 }
 
