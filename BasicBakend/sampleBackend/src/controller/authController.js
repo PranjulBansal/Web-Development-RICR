@@ -1,4 +1,5 @@
 import User from "../models/userModel.js";
+import bcrypt from "bcrypt";
 export const Register=async (req, res, next) => {
   // res.status(200).json({ message: "User registration successfull" });
   try {
@@ -17,10 +18,11 @@ export const Register=async (req, res, next) => {
       error.statusCode=409;
       return next(error);
     }
+    const hashedPassword=await bcrypt.hash(password,10)
     const newUser=await User.create({
       fullName,
       email,
-      password,
+      password:hashedPassword,
     });
     res.status(201).json({message:`welcome ${newUser.fullName}`});
   } catch (error) {
@@ -29,7 +31,34 @@ export const Register=async (req, res, next) => {
   }
 }
 
-export const Login =(req, res) => {
+export const Login =async(req, res,next) => {
+  try {
+    const {email,password}=req.body;
+    if(!email || !password)
+    {
+      const error=new Error("All Fields Required");
+      error.statusCode=400;
+      return next(error);
+    }
+
+    const existingUser=await User.findOne({email});
+    if(!existingUser)
+    {
+      const error=new Error("User not registered");
+      error.statusCode=401;
+      return next(error);
+    }
+
+   const isVerified=await bcrypt.compare(password,existingUser.password)
+   if(!isVerified)
+   {
+     const error=new Error("Invalid Password");
+      error.statusCode=401;
+      return next(error);
+   }
+  } catch (error) {
+    
+  }
   res.status(200).json({ message: "User login Successfully" });
 }
 
