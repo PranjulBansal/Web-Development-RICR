@@ -5,9 +5,9 @@ import cors from 'cors';
 import morgan from 'morgan';
 import AuthRouter from './src/routes/authRoutes.js';
 import userRouter from './src/routes/userRoutes.js';
-const app=express();
 import connectDB from './src/config/db.js';
 
+const app=express();
 //By default, browsers block requests from different origins for security reasons.
 // cors() comes from the cors package.
 //Passing {} means default configuration, allowing all origins (*) to access your backend.
@@ -27,6 +27,12 @@ app.get("/",(req,res)=>{
     res.status(200).json({message:"Server Connected Successfully in 2"});
 });
 
+//this middleware convert the error into json format and also get error from default error handler function as a argument in parameter app.use in err.
+app.use((err,req,res,next)=>{
+    const errorMessage=err.message || "Internal Server Error";
+    const errorCode=err.statusCode|| 500;
+    res.status(errorCode).json({message:errorMessage});
+})
 const port= process.env.PORT||5000;
 
 app.listen(port,()=>{

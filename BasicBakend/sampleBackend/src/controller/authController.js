@@ -8,6 +8,7 @@ export const Register=async (req, res, next) => {
     if(!fullName || !email || !password)
     {
       // console.log("Error 400 : All fields required")
+      //default error handler create to handle all errors
       const error=new Error("All Fields Required");
       error.statusCode=400;
       return next(error);
