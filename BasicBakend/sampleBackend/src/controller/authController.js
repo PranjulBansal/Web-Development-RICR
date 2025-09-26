@@ -58,6 +58,7 @@ export const Login =async(req, res,next) => {
       error.statusCode=401;
       return next(error);
    }
+   //I need token to while successfully login
    await getAuthToken(existingUser,res);
   } catch (error) {
     
@@ -67,7 +68,12 @@ export const Login =async(req, res,next) => {
 
 
 export const Logout=(req, res) => {
-  res.status(200).json({ message: "User logout Successfully" });
+  try {
+    res.clearCookie("hideAndSeek",{maxAge:0})
+      res.status(200).json({ message: "User logout Successfully" });
+  } catch (error) {
+    next(error)
+  }
 }
 
 export const ForgetPass=(req, res) => {
