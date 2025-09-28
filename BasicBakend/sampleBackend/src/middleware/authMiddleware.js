@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import User from "../models/userModel";
+import User from "../models/userModel.js";
 export const LoginCheck=async(req,res,next)=>{
     try {
         const token=req.cookies?.HideAndSeek || req.headers.authorization?.split(" ")[1];
@@ -7,11 +7,12 @@ export const LoginCheck=async(req,res,next)=>{
 
         const decode = await jwt.verify(token,process.env.JWT_SECRET_KEY);
         console.log(decode);
-
-        const verifiedUser=await User.findByID(decode.id);
+ 
+        const verifiedUser=await User.findById(decode.id); 
+        console.log(verifiedUser);
         if(!verifiedUser)
         {
-            const error=new Error("Session Expired, Login Again");
+            const error=new Error("Session Expired, Login Again"); 
             error.statusCode=401;
             return next(error);
         }
